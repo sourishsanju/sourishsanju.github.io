@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cost-Based Pathfinding and Graph Search | Sourish Tetakayala</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-image {
+      width: 90%;
+      max-width: 650px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .button-wrapper {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="project-container">
+
+  <!-- Project Image -->
+  <img src="../assets/images/AI-ML/project5.jpeg" alt="Cost-Based Pathfinding Graph" class="project-image">
+
+  <h1 class="main-title">Cost-Based Pathfinding and Graph Search</h1>
+
+  <div class="project-section">
+    <h2>Objective</h2>
+    <p>
+      To design and implement an optimal route-finding system between airports based on cost, time, and distance 
+      using graph-based modeling and pathfinding algorithms such as A* and Dijkstra.
+    </p>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Done</h2>
+    <ul>
+      <li>Built a directed graph network representing airports and available travel paths.</li>
+      <li>Fetched and processed travel data including distance, time, and cost for edges using APIs.</li>
+      <li>Applied A* algorithm for optimal path computation between airports based on selected metrics (cost, time, comfort).</li>
+      <li>Developed a custom GUI to allow users to select trip type, mode of transportation, and prioritize cost or time.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>Challenges</h2>
+    <ul>
+      <li>Managing incomplete data from APIs and handling rate limits during real-time fetches.</li>
+      <li>Normalizing multi-metric data (cost vs. distance vs. time) for pathfinding optimization.</li>
+      <li>Ensuring scalability and robustness in graph construction as more nodes (airports) are added.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Learned</h2>
+    <ul>
+      <li>Advanced graph modeling techniques for transportation networks.</li>
+      <li>Optimization of A* and uniform-cost search based on real-world parameters.</li>
+      <li>Handling live external API data with error tolerance and dynamic updates.</li>
+      <li>Building user-friendly interfaces for flexible query inputs in navigation systems.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Achieved</h2>
+    <p>
+      Successfully developed an interactive pathfinding model capable of providing optimized travel routes 
+      balancing cost, time, and distance. The system proved to be adaptable for real-world route planning 
+      and demonstrated efficient search computation even for dense airport networks.
+    </p>
+  </div>
+
+  <div class="project-section">
+    <h2>Supporting Materials</h2>
+    <div class="button-wrapper">
+      <a href="https://colab.research.google.com/drive/1VIhKxkjaVetQv7TII0upTTReI5PDJxod?usp=sharing" class="resume-button" target="_blank">
+        Open Google Colab
+      </a>
+    </div>
+  </div>
+
+  <div class="button-wrapper">
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+  </div>
+
+</div>
+
+</body>
+</html>

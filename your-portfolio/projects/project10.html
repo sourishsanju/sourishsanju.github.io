@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generative Design and Simulation of GE Bracket | Sourish Tetakayala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-video {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="project-container">
+
+    <!-- Project Video -->
+    <video class="project-video" controls>
+      <source src="../assets/docs/project10.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1 class="main-title">Generative Design and Simulation of GE Engine Bracket</h1>
+
+    <div class="project-section">
+      <h2>Objective</h2>
+      <p>
+        To use simulation-driven generative design to optimize a GE engine bracket for strength, weight reduction, and manufacturability, applying real-world loading scenarios.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Done</h2>
+      <ul>
+        <li>Imported GE bracket model into Autodesk Fusion 360.</li>
+        <li>Applied realistic constraints and multiple load cases (1.5x min, 0.75x max, etc.).</li>
+        <li>Performed material optimization using Titanium, Cobalt Chrome, and Aluminum.</li>
+        <li>Simulated stress, strain, and displacement behavior to validate designs.</li>
+        <li>Generated CNC-compatible G-code after evaluating additive manufacturing suitability.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>Challenges</h2>
+      <ul>
+        <li>High stress concentration at sharp corners leading to design failure under load.</li>
+        <li>Managing post-processing costs and tolerance errors in additive manufacturing.</li>
+        <li>Balancing lightweight design with sufficient mechanical robustness for jet engine environments.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Learned</h2>
+      <ul>
+        <li>Importance of geometry in cost, scrap rates, and failure prediction.</li>
+        <li>Generative design techniques for multi-material performance optimization.</li>
+        <li>Real-world manufacturing integration through Fusion 360 G-code simulation.</li>
+        <li>Critical trade-offs between mass reduction, stress tolerance, and manufacturability.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Achieved</h2>
+      <p>
+        Selected Titanium 6Al-4V as the ideal design material, achieving a high strength-to-weight ratio.
+        Reduced mass by 20% while maintaining required safety factors under extreme load conditions.
+        Successfully generated manufacturing-ready models with optimized cost vs performance balance.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>Supporting Materials</h2>
+      <a href="../assets/docs/project10.pdf" class="resume-button" target="_blank">View Full Report / Presentation</a>
+    </div>
+
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+  </div>
+
+</body>
+</html>

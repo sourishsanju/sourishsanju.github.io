@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Recognition and Alert System | Sourish Tetakayala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-video {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="project-container">
+
+    <!-- Project Video -->
+    <video controls class="project-video">
+      <source src="../assets/docs/project6.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <h1 class="main-title">Face Recognition and Alert System Using YOLO</h1>
+
+    <div class="project-section">
+      <h2>What Was Done</h2>
+      <ul>
+        <li><strong>Data Augmentation:</strong> Expanded face training dataset via rotations, brightness changes, and blurs.</li>
+        <li><strong>YOLOv5 Model Training:</strong> Fine-tuned model to recognize faces accurately in various conditions.</li>
+        <li><strong>Wireless IP Camera Integration:</strong> Live real-time monitoring from a remote camera stream.</li>
+        <li><strong>Automated WhatsApp Alerts:</strong> Triggered when unknown faces are detected.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Learned</h2>
+      <ul>
+        <li>Advanced data augmentation strategies for small datasets.</li>
+        <li>YOLOv5 model fine-tuning for edge deployment scenarios.</li>
+        <li>Camera integration and live object detection inference.</li>
+        <li>Real-time alert systems with WhatsApp API for surveillance use cases.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Achieved</h2>
+      <p>
+        Successfully deployed a working face recognition security system using edge AI techniques combined with real-time remote monitoring and alert messaging.
+      </p>
+    </div>
+
+
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+  </div>
+
+</body>
+</html>

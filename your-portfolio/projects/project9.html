@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bicopter Control System | Sourish Tetakayala</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-image, .video-wrapper video {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+
+    .button-center {
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="project-container">
+
+    <!-- Video First -->
+    <div class="video-wrapper">
+      <video controls>
+        <source src="../assets/docs/project9.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <h1 class="main-title">Bicopter Control System</h1>
+
+    <div class="project-section">
+      <h2>Objective</h2>
+      <p>
+        To design and implement a PID and LQR-based control system for stabilizing a custom bicopter UAV, 
+        enabling stable vertical lift, hovering, and simple trajectory tracking.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Done</h2>
+      <ul>
+        <li>Designed bicopter model and CAD frame using SolidWorks.</li>
+        <li>Implemented PID control for basic pitch/roll/yaw stability in ROS2.</li>
+        <li>Developed LQR control strategies for improved stabilization in dynamic scenarios.</li>
+        <li>Ran simulation-based tuning using Simulink before real-world flight experiments.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>Challenges</h2>
+      <ul>
+        <li>Managing unstable pitch-yaw coupling unique to bicopter dynamics.</li>
+        <li>Real-time gain tuning for LQR controller with physical motor limitations.</li>
+        <li>Maintaining hover stability under varying battery loads.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Learned</h2>
+      <ul>
+        <li>Real-world validation of model-based control design (PID, LQR).</li>
+        <li>Understanding motor asymmetry effects in minimal rotor systems.</li>
+        <li>Critical role of sensor fusion (IMU + visual feedback) in flight stabilization.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Achieved</h2>
+      <p>
+        Successfully stabilized a minimal bicopter aerial vehicle using combined PID and LQR strategies. 
+        Demonstrated consistent vertical lift, hover, and basic trajectory following with real-world validation flights.
+      </p>
+    </div>
+
+    <!-- Full Report Button Centered at Bottom -->
+    <div class="button-center">
+      <a href="../assets/docs/project9.pdf" class="resume-button" target="_blank">View Full Report</a>
+    </div>
+
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+  </div>
+
+</body>
+</html>

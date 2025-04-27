@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Energy Consumption Prediction | Sourish Tetakayala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+    .project-image {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+    .project-section p, .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+    .back-button {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="project-container">
+
+  <!-- Optional image -->
+  <img src="../assets/images/AI-ML/project4.jpeg" alt="Energy Prediction" class="project-image">
+
+  <h1 class="main-title">Energy Consumption Prediction Using Machine Learning</h1>
+
+  <div class="project-section">
+    <h2>Objective</h2>
+    <p>
+      To build accurate predictive models for HVAC energy consumption using ML techniques such as XGBoost, CatBoost, LGBM, and Linear Regression — enabling reduction in carbon emissions from building systems.
+    </p>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Done</h2>
+    <ul>
+      <li>Processed a dataset with 20M+ records from over 1000 buildings, incorporating weather and building metadata.</li>
+      <li>Performed exploratory data analysis, feature extraction, and missing value handling for better model training.</li>
+      <li>Implemented CatBoost, XGBoost, LGBM, and Linear Regression models for energy prediction tasks.</li>
+      <li>Conducted hyperparameter tuning to optimize model performance and minimize errors.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>Challenges</h2>
+    <ul>
+      <li>Managing a huge dataset and optimizing computation for 20M+ rows.</li>
+      <li>Feature selection and missing value imputation without information leakage.</li>
+      <li>Preventing model overfitting and ensuring generalization across different sites.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Learned</h2>
+    <ul>
+      <li>Importance of integrating environmental (weather) data for better energy prediction accuracy.</li>
+      <li>Comparison and strengths of various ML models, finding XGBoost to outperform others in RMSE and MAE.</li>
+      <li>Role of hyperparameter tuning and early stopping in preventing overfitting in regression models.</li>
+    </ul>
+  </div>
+
+  <div class="project-section">
+    <h2>What Was Achieved</h2>
+    <p>
+      Successfully demonstrated that advanced gradient boosting models significantly outperform traditional regression methods for energy prediction. XGBoost achieved the best prediction accuracy, helping optimize energy efficiency efforts.
+    </p>
+  </div>
+
+  <div class="project-section">
+    <h2>Supporting Materials</h2>
+    <!-- No video, so we link report -->
+    <a href="../assets/docs/project4.pdf" class="resume-button" target="_blank">View Full Report / Presentation</a>
+  </div>
+
+  <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+</div>
+
+</body>
+</html>

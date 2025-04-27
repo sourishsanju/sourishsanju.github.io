@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quadcopter Team Configurable Motion | Sourish Tetakayala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .video-wrapper {
+      margin-top: 20px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="project-container">
+
+    <!-- Project Image -->
+    <img src="../assets/images/robotics/project7.jpeg" alt="Quadcopter-Quadruped Coordination" class="project-image">
+
+    <h1 class="main-title">Quadcopter Team Configurable Motion Guided by a Quadruped</h1>
+
+    <div class="project-section">
+      <h2>Objective</h2>
+      <p>
+        To design a cooperative motion strategy where a quadruped robot guides the motion of a team of quadcopters using affine deformation modeling, improving multi-agent path coordination and adaptive search capabilities.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Done</h2>
+      <ul>
+        <li>Modeled quadcopter team motion using affine transformation guided by quadruped motion paths.</li>
+        <li>Integrated ROS2 and Vicon system for real-time localization and communication among agents.</li>
+        <li>Developed adaptive configuration updating strategies to maintain optimal drone formation under path constraints.</li>
+        <li>Experimentally validated with quadcopters and a Unitree Go1 quadruped using Vicon-based motion capture.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>Challenges</h2>
+      <ul>
+        <li>Maintaining stable multi-agent configurations during non-uniform quadruped motion.</li>
+        <li>Minimizing path drift and deformation lag between leader and follower robots.</li>
+        <li>Implementing synchronized communication without network congestion or data loss.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Learned</h2>
+      <ul>
+        <li>Affine deformation modeling for dynamic team motion coordination.</li>
+        <li>ROS2 multi-node communication architecture for real-time robotic control.</li>
+        <li>Handling synchronization challenges between aerial and ground robots using Vicon.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Achieved</h2>
+      <p>
+        Successfully demonstrated that quadruped-guided drone formations can dynamically adjust their configuration
+        in real-time while maintaining coverage and formation constraints. Published results in a leading robotics conference.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>Supporting Materials</h2>
+
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/8_rDcQfNMUE" frameborder="0" allowfullscreen></iframe>
+      </div>
+
+      <a href="https://ieeexplore.ieee.org/abstract/document/10821600?casa_token=jjC1hBCEsA8AAAAA:WZUQNVm6h43-znLFGPw6hlAGjlJWzx18eUuNy5ismu1OCbB6pa0l4gB_nwFIv56b3jJbIMML1g" 
+         class="resume-button" target="_blank">
+         View Published Research Paper
+      </a>
+    </div>
+
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+  </div>
+
+</body>
+</html>

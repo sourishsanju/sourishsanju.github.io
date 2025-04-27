@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design and Analysis of Maglev Wind Turbine | Sourish Tetakayala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      color: #ccc;
+      font-family: 'Poppins', sans-serif;
+      padding: 60px 20px;
+    }
+    .button-center {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+
+    .project-container {
+      max-width: 900px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .main-title {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin: 30px 0;
+      color: white;
+    }
+
+    .project-image {
+      width: 100%;
+      max-width: 700px;
+      height: auto;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .project-section {
+      margin: 50px 0;
+      text-align: left;
+    }
+
+    .project-section h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: white;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+    }
+
+    .project-section p, 
+    .project-section li {
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #ccc;
+    }
+
+    .project-section ul {
+      padding-left: 20px;
+      list-style-type: disc;
+    }
+
+    .video-wrapper {
+      margin-top: 20px;
+    }
+
+    .video-wrapper iframe {
+      width: 100%;
+      max-width: 700px;
+      height: 400px;
+      border-radius: 12px;
+      box-shadow: 0 5px 20px rgba(255, 255, 255, 0.08);
+    }
+
+    .resume-button, .back-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background: transparent;
+      border: 1px solid #777;
+      color: #ccc;
+      border-radius: 6px;
+      transition: background-color 0.3s, transform 0.3s;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .resume-button:hover, .back-button:hover {
+      background-color: #ffffff20;
+      transform: scale(1.05);
+      color: white;
+    }
+
+    .back-button {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="project-container">
+
+    <!-- Project Image -->
+    <img src="../assets/images/mech/project1.jpg" alt="Maglev Wind Turbine" class="project-image">
+
+    <h1 class="main-title">Design and Analysis of Maglev Wind Turbine</h1>
+
+    <div class="project-section">
+      <h2>Objective</h2>
+      <p>
+        To design and simulate a magnetic levitation (Maglev) vertical-axis wind turbine that eliminates mechanical friction, enabling startup at lower wind speeds and improving energy harvesting in urban and low-wind environments.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Done</h2>
+      <ul>
+        <li>Developed a full 3D CAD model using SolidWorks 2018.</li>
+        <li>Simulated aerodynamic performance of the turbine blades using ANSYS Fluent (CFD analysis).</li>
+        <li>Modeled and simulated generator performance using an axial flux permanent magnet generator design.</li>
+        <li>Designed inverter circuitry for DC to AC power conversion.</li>
+        <li>Validated theoretical calculations using MATLAB/Simulink for key aerodynamic and energy conversion equations.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>Challenges</h2>
+      <ul>
+        <li>Accurately simulating low-wind startup conditions under magnetic levitation constraints.</li>
+        <li>Ensuring stable magnetic suspension while keeping material costs feasible.</li>
+        <li>Optimizing the aerodynamic profile for maximum torque at minimum speeds.</li>
+        <li>Modeling generator behavior without a physical prototype.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Learned</h2>
+      <ul>
+        <li>Real-world application of magnetic levitation principles in mechanical systems.</li>
+        <li>Use of Computational Fluid Dynamics (CFD) for wind turbine blade analysis.</li>
+        <li>Simulation of power systems and mechanical-electrical energy conversion using MATLAB/Simulink.</li>
+        <li>Tradeoffs in vertical-axis vs horizontal-axis wind turbine designs.</li>
+      </ul>
+    </div>
+
+    <div class="project-section">
+      <h2>What Was Achieved</h2>
+      <p>
+        The project successfully demonstrated via simulation that a Maglev vertical-axis turbine can self-start at lower wind speeds, improving power output efficiency compared to traditional friction-based turbines. The modeling validated the feasibility of using magnetic suspension to reduce startup inertia and maintenance requirements.
+      </p>
+    </div>
+
+    <div class="project-section">
+      <h2>Supporting Materials</h2>
+
+      <div class="button-center">
+        <a href="../assets/docs/project1.pdf" class="resume-button" target="_blank">View Full Report / Presentation</a>
+      </div>
+      
+ </div>
+
+    <a href="../index.html#projects" class="back-button">← Back to Projects</a>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sourish Tetakayala | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://kit.fontawesome.com/1c2e8c4b98.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+
+
+  <style>
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+    }
+    .main-title {
+      font-size: 3.2rem;
+      font-weight: 900;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="nav-name">Sourish Tetakayala</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="assets/resume/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      <a href="mailto:sourish@arizona.edu" target="_blank"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/sourish-tetakayala-5205b3163" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </nav>
+  
+  
+
+<!-- About Section -->
+<section id="about" class="section about-section" data-aos="fade-up">
+  <div class="about-background">
+    <img src="assets/images/profilepic.png" alt="Sourish Tetakayala" class="profile-pic">
+    <h1 class="main-title">Hi, I'm Sourish Tetakayala</h1>
+    <p class="about-description">
+      A robotics engineer with a foundation in mechanical engineering who loves pushing hardware and algorithms to their limits. 
+      After a B.Tech. in Mechanical Engineering, I completed a master’s in Robotics & Automation and have spent the past year researching multi-agent robotic systems blending drones, quadrupeds, and AI-driven control.
+    </p>
+    <p class="about-description">
+      My sweet-spot is the overlap of <em>control theory, embedded software, and data-driven insight</em>. Whether it’s tuning a PID/LQR loop in ROS 2, fusing Vicon + IMU data, or running CatBoost on 20M-row HVAC datasets, I deliver end-to-end solutions bridging the digital and physical worlds. Let's build the future — one line of code and one bolt at a time!
+    </p>
+  </div>
+</section>
+
+<!-- Experience Section -->
+<section id="experience" class="section" data-aos="fade-up">
+  <h1>Experience</h1>
+  <div class="timeline-container">
+
+    <div class="timeline-block" data-aos="fade-right">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content">
+        <h2>Bicopter control & Generative Design</h2>
+        <h4>Student Researcher, University of Arizona</h4>
+        <p>Jul 2024 – Dec 2024</p>
+        <ul class="timeline-details">
+          <li>Stabilized bicopter UAVs using PID and LQR control models.</li>
+          <li>Led generative design optimization for aerospace components, achieving 25% mass reduction.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-block" data-aos="fade-right">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content">
+        <h2>Robotics Researcher - Multi-Agent Systems</h2>
+        <h4>University of Arizona</h4>
+        <p>Jan 2024 – Jun 2024</p>
+        <ul class="timeline-details">
+          <li>Designed fluid flow-based motion models improving quadruped trajectory accuracy by 30%.</li>
+          <li>Reduced ROS2 + Vicon localization error by 25% through 170+ experimental trials.</li>
+          <li>Enhanced UAV-team coordination via affine deformation modeling and Jacobian-based planning.</li>
+          <li>Integrated LIDAR, IMU, and Vicon sensor fusion to improve quadcopter tracking accuracy.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-block" data-aos="fade-right">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content">
+        <h2>Industrial Intern - Mechanical Systems</h2>
+        <h4>NSIC Technical Services Centre, Chennai</h4>
+        <p>Sep 2021 – Oct 2021</p>
+        <ul class="timeline-details">
+          <li>Trained in piping layouts, fluid flow optimization, and mechanical structural systems.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Education Section -->
+<section id="education" class="section" data-aos="fade-up">
+  <h1>Education</h1>
+  <div class="timeline-container">
+
+    <div class="timeline-block" data-aos="fade-right">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content">
+        <h2>M.E. Robotics and Automation</h2>
+        <h4>University of Arizona</h4>
+        <p>Jan 2023 – Dec 2024</p>
+      </div>
+    </div>
+
+    <div class="timeline-block" data-aos="fade-right">
+      <div class="timeline-icon"></div>
+      <div class="timeline-content">
+        <h2>B.Tech Mechanical Engineering</h2>
+        <h4>Hindustan Institute of Technology and Science</h4>
+        <p>Jun 2018 – Apr 2022</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section" data-aos="fade-up">
+  <h1>Projects</h1>
+  <div class="filters">
+    <button onclick="filterProjects(event, 'all')">All</button>
+    <button onclick="filterProjects(event, 'robotics')">Robotics</button>
+    <button onclick="filterProjects(event, 'ai')">AI/ML</button>
+    <button onclick="filterProjects(event, 'mech')">Mechanical</button>
+  </div>
+
+  <div class="projects-grid">
+    <!-- Robotics -->
+    <div class="project-card robotics" data-aos="fade-up">
+      <a href="projects/project7.html"><img src="assets/images/robotics/project7.jpeg" alt="Quadcopter Coordination"><h3>Quadcopter-Quadruped Coordination</h3><p>Guided drone teams with quadruped references using affine modeling.</p></a>
+    </div>
+    <div class="project-card robotics" data-aos="fade-up">
+      <a href="projects/project8.html"><img src="assets/images/robotics/project8.jpeg" alt="Fluid Navigation"><h3>Fluid Flow-Based Navigation</h3><p>Dynamic obstacle avoidance using real-time fluid field modeling.</p></a>
+    </div>
+    <div class="project-card robotics" data-aos="fade-up">
+      <a href="projects/project9.html"><img src="assets/images/robotics/project9.jpeg" alt="Bicopter Control"><h3>Bicopter Control System</h3><p>PID and LQR stabilization of aerial bicopter platform.</p></a>
+    </div>
+    <div class="project-card robotics" data-aos="fade-up">
+      <a href="projects/project10.html"><img src="assets/images/robotics/project10.jpeg" alt="Generative Design"><h3>Generative Design - GE Engine Bracket</h3><p>Mass-optimized aerospace component designs using Fusion 360.</p></a>
+    </div>
+
+    <!-- AI/ML -->
+    <div class="project-card ai" data-aos="fade-up">
+      <a href="projects/project4.html"><img src="assets/images/AI-ML/project4.jpeg" alt="Energy Prediction"><h3>Energy Consumption Prediction</h3><p>Forecasting HVAC usage with XGBoost and CatBoost models.</p></a>
+    </div>
+    <div class="project-card ai" data-aos="fade-up">
+      <a href="projects/project5.html"><img src="assets/images/AI-ML/project5.jpeg" alt="Cost-Based Search"><h3>Cost-Based Pathfinding Search</h3><p>Graph-based uniform cost search implementation for routing tasks.</p></a>
+    </div>
+    <div class="project-card ai" data-aos="fade-up">
+      <a href="projects/project6.html"><img src="assets/images/AI-ML/project6.jpeg" alt="Face Detection"><h3>Face Recognition and Alert System</h3><p>YOLO face detection + WhatsApp alert system.</p></a>
+    </div>
+
+    <!-- Mechanical -->
+    <div class="project-card mech" data-aos="fade-up">
+      <a href="projects/project1.html"><img src="assets/images/mech/project1.jpg" alt="Maglev Turbine"><h3>Maglev Wind Turbine</h3><p>Magnetic levitation turbines for low-speed energy capture.</p></a>
+    </div>
+    <div class="project-card mech" data-aos="fade-up">
+      <a href="projects/project2.html"><img src="assets/images/mech/project2.png" alt="Ball Mill"><h3>Mini Ball Milling Machine</h3><p>Fabricated lab-scale ball milling system for metal powders.</p></a>
+    </div>
+    <div class="project-card mech" data-aos="fade-up">
+      <a href="projects/project3.html"><img src="assets/images/mech/project3.jpeg" alt="Pump Impeller"><h3>Centrifugal Pump Impeller Design</h3><p>ANSYS analysis of semi-open impeller efficiency improvements.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <h2>Let's Connect</h2>
+  
+  <div class="footer-icons">
+    <a href="tel:+15203602135" target="_blank" rel="noopener noreferrer"><i class="fas fa-phone"></i></a>
+    <a href="mailto:sourish@arizona.edu" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+    <a href="https://linkedin.com/in/sourish-tetakayala-5205b3163" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/sourishsanju" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+  </div>
+
+  <p class="footer-text">© 2025 Sourish Tetakayala. All rights reserved.</p>
+</footer>
+
+
+
+<!-- JavaScript and AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  const allProjectsOriginal = Array.from(document.querySelectorAll('.project-card'));
+
+  function filterProjects(event, category) {
+    event.preventDefault();  // prevent button from refreshing page
+
+    const grid = document.querySelector('.projects-grid');
+    grid.innerHTML = '';
+
+    allProjectsOriginal.forEach(project => {
+      if (category === 'all' || project.classList.contains(category)) {
+        grid.appendChild(project);
+      }
+    });
+
+    AOS.refresh(); // Re-run animation
+  }
+</script>
+
+</body>
+</html>
