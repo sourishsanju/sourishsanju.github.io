@@ -36,7 +36,6 @@ a {
   gap: 25px;
 }
 
-/* Navbar Links + Underline Hover */
 .nav-links a {
   font-size: 1rem;
   font-weight: 400;
@@ -95,8 +94,8 @@ a {
 
 /* Profile Picture */
 .profile-pic {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   margin: 0 auto 20px;
@@ -113,6 +112,12 @@ a {
     opacity: 1;
     transform: scale(1);
   }
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
 }
 
 /* Timeline Styles */
@@ -326,59 +331,81 @@ footer {
 
 /* Mobile Optimization */
 @media (max-width: 768px) {
-  .section {
-    padding: 80px 20px;
+  /* General */
+  body {
+    padding: 20px;
   }
 
+  .section {
+    padding: 60px 20px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .nav-name {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+
+  /* About */
+  .profile-pic {
+    width: 100px;
+    height: 100px;
+  }
   .main-title {
     font-size: 2.2rem;
   }
-
-  h1 {
-    font-size: 2rem;
+  .about-description {
+    font-size: 1rem;
   }
 
+  /* Timeline */
   .timeline-container {
     padding-left: 0;
     align-items: center;
   }
-
   .timeline-block {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
-  .timeline-icon {
-    margin-bottom: 10px;
+  .timeline-content {
+    max-width: 90%;
   }
 
+  /* Projects */
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
-}
-.profile-pic {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0 auto 20px;
-  display: block;
-  border: 2px solid #ffffff40;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
-  opacity: 0;
-  transform: scale(0.9);
-  animation: fadeInProfile 1s ease forwards;
-}
+  .project-card {
+    margin: auto;
+    width: 90%;
+  }
+  .project-card img {
+    height: auto;
+  }
 
-@keyframes fadeInProfile {
-  to {
-    opacity: 1;
-    transform: scale(1);
+  /* Footer */
+  footer {
+    padding: 30px 15px;
+    font-size: 0.9rem;
   }
-}
-.profile-pic:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
-  transition: all 0.3s ease;
+  .footer-icons a {
+    font-size: 22px;
+    margin: 0 10px;
+  }
+  .footer-text {
+    font-size: 0.85rem;
+  }
 }
